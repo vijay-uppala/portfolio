@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <title>vijay Portfolio </title>
+    
+    <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+    <div class="hero">
+        <nav>
+        <img src="" class="logo" />
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">skills</a></li>
+            <li><a href="#">Education</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="resume-button">
+        <a href="VIJAY RESUME.pdf" class="btn">Resume</a>
+        </div>
+        </nav>
+
+    <div class="content">
+        <span class="portfolio"></span>
+        <h1>Hello, I’m <span>vijay</span></h1>
+        
+        </div>
+    </div>
+    <div id="home1">
+        <h1>ABOUT ME</h1>
+        <hr width="300px">
+        <div id="profile">
+            <img height="250px" width="225px" src="profile.jpg" alt="">
+        </div>
+        <p>Hello! I'm VIJAY KUMAR, passionate and innovative Computer Science graduate specializing in web development. Ever since I embarked on my journey in the world of technology, I've been fascinated by the power of coding to create meaningful solutions and enhance user experiences.</p>
+    </div>
+    <div id="home2">
+        <div id="phone">
+            <h4>Phone</h4>
+            <p>+91 9059125915</p>
+        </div>
+        <div id="Email">
+            <h4>Email</h4>
+            <p>VIJAYKUMARUPPALA39@GMAIL.COM</p>
+        </div>
+    </div>
+    <div id="EDUCATION">
+        <h1>EDUCATION</h1>
+        <hr width="250px">
+        <div id="th">
+        <h4>2009-2019</h4>
+        <h4>Secondary Education</h4>
+        <p>Demonstrating progressive academic development, including proficiency in foundational subjects, critical thinking skills, and exploration of advanced concepts, from 1st to 10th grade.</p>
+        </div>
+        <div id="inter">
+        <h4>2019-2022</h4>
+        <h4>POIYTECHNIC Education</h4>
+        <p>Academic progression through the DIPLOMA(MECHANICAL ENGINEERING) course, highlighting mastery of core subjects, advanced problem-solving skills, and exploration of higher-level concepts in mathematics and the physical sciences.</p>
+        </div>
+        <div id="btech">
+        <h4>2022-Present</h4>
+        <h4>Bachelor of Technology-CSSE</h4>
+        <p>Academic journey in the Computer Science and Systems Engineering BTech program, showcasing proficiency in programming languages, system design projects, and continual exploration of emerging technologies and engineering principles</p>
+        </div>
+    </div>
+    <div id="skills">
+        <h1>Skills</h1>
+        <hr width="300px">
+        <div id="Java">
+        <img height="50px" width="60px" src="java.svg" alt="java">
+        <h3>Java</h3>
+        </div>
+        <div id="Python">
+        <img height="50px" width="60px" src="python.svg" alt="Python">
+        <h3>Python</h3>
+        </div>
+        <div id="SQL">
+        <img height="50px" width="60px" src="database-solid.svg" alt="SQl">
+        <h4>Sql</h4>
+        </div>
+        <div id="Html">
+        <img height="50px" width="60px" src="html5.svg" alt="Frontend">
+        <h3>Frontend</h3>
+        </div>
+    </div>
+    <div id="contact">
+        <h1>Contact Me</h1>
+        <hr width="300px">
+        <div id="Linkedin">
+            <a href="https://www.linkedin.com/" target="_blank">
+                <img height="30px" width="40px" src="linkedin.svg" alt="LinkedIn">
+            </a>
+        </div>
+        <div id="Instagram">
+            <a href="https://www.instagram.com/" target="_blank">
+                <img height="30px" width="40px" src="instagram.svg" alt="Instagram">
+            </a>
+        </div>
+        
+        
+         <form action="" onsubmit="Alert()">
+            <input type="text" id="text" name="text" placeholder="Name" required><br>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com"><br>
+            <input type="text" id="message" name="message" placeholder="Message" required><br>
+            <input type="submit">
+         </form>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+
+a {
+  text-decoration: none;
+}
+.hero {
+  width: 100%;
+  height: 100vh;
+  background: url(img/bg.png);
+  background-size: cover;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 40px 0px 40px;
+  
+ 
+}
+.logo {
+  max-height: 40px;
+}
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px 20px;
+}
+nav ul li a {
+  color: #b9b5b5b8;
+  position: relative;
+  padding: 5px 0;
+}
+nav ul li a:hover {
+  color: #fd4766;
+}
+nav ul li a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: #fd4766;
+  transition: 0.3s;
+  bottom: 0;
+}
+nav ul li a:hover:after {
+  width: 100%;
+}
+.btn {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 16px 40px;
+  border-radius: 500px;
+  display: inline-block;
+  font-weight: 500;
+  transition: all 0.4s ease-in-out;
+  background-size: 152% 100%;
+  background: #fd4766;
+  border: 2px solid #fd4766;
+}
+.btn:hover {
+  background: transparent;
+  border-color: #fd4766;
+  color: #fd4766;
+}
+.content {
+  position: absolute;
+  top: 35%;
+  left: 8%;
+}
+.content .title {
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  display: inline-block;
+  margin-bottom: 20px;
+  background: linear-gradient(
+    120deg,
+    #1c99fe 20.69%,
+    #7644ff 50.19%,
+    #fd4766 79.69%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.content h1 {
+  color: #1f1f25;
+  font-size: 75px;
+  font-weight: 900;
+  line-height: 90px;
+  text-transform: inherit;
+  width: 70%;
+}
+.content h1 span {
+  color: #fd4766;
+}
+.content p {
+  width: 55%;
+  color: #202020;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+nav {
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0.893);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 10px;
+}
+li {
+    
+    display: inline-block;
+}
+#name{
+ padding-left: 10px;
+ color:white;
+ font-size: x-large;
+ font-family:'Courier New', Courier, monospace;
+}
+li a {
+    display: block;
+    padding: 10px 140px;
+    text-decoration: none;
+    color: white;
+}
+li a:hover {
+    color:gray;
+    font-weight: bold;
+}
+#home{
+    padding-top: 8px;
+    text-align: center;
+    background-image: url("C:\Users\vijay\OneDrive\Desktop\st\d6a692fc1e0489955e2b4ed4ae742c76.jpg");
+    background-position:25px ;
+    
+}
+#home h1{
+    padding-top: 15px;
+    color: white;
+}
+
+.resume-button {
+    margin-top: 20px; 
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.resume-button button {
+    background-color:rgb(0, 0, 0); 
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+}
+.resume-button button:hover {
+    background-color:rgb(222, 211, 211);
+    color: rgb(0, 0, 0);
+    transition-duration: 0.4s;
+}
+span{
+    color:rgb(0, 0, 0);
+    size: 10px;
+}
+#home1 h1{
+    padding-top: 5px;
+    text-align: center;
+    font-size: large;
+    font-weight: bolder;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+#home1 p{
+    text-align:left;
+    padding-right: 809px;
+    padding-top: 30px;
+    padding-left: 100px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#phone{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   padding-left: 100px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   display: inline-block;
+}
+#Email{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-left: 100px;  
+    display: inline-block;
+}
+#profile{
+    position:absolute;
+    padding-left: 1000px;
+    padding-top: 40px;
+    display: inline-block;
+}
+#profile img {
+    border-radius: 30px;
+}
+#th, #inter, #btech {
+    width: calc(33.33% - 10px); 
+    vertical-align: top;
+    padding-left: 100px;
+    box-sizing: border-box;
+    display: inline-block;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#th p, #inter p, #btech p {
+    text-align: left;
+    padding-bottom: 50px;
+    margin: 0;
+}
+#EDUCATION h1{
+    padding-top: 50px;
+    text-align: center;
+    font-size: large;
+    font-weight: bolder;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#EDUCATION {
+    background-color: rgba(211, 211, 211, 0.500);
+}
+#skills h1{
+    padding-top: 30px;
+    text-align: center;
+    font-size: large;
+    font-weight: bolder;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+} 
+#Java, #Python, #SQL, #Html {
+    padding-top: 50px;
+    width: calc(25% - 10px); 
+    padding-left: 170px;
+    box-sizing: border-box;
+    display: inline-block;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#contact {
+    text-align: left;
+    padding-bottom: 50px;
+    text-align: center;
+    margin-top: 50px;
+    background-color: rgba(211, 211, 211, 0.500);
+
+}
+
+#contact h1 {
+    font-size: large;
+    font-weight: bolder;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+padding-top: 20px;
+}
+
+#text, #email, #message {
+   
+    width: 400px;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+input[type="submit"] {
+    background-color:black;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color:rgb(222, 211, 211);
+    color: black;
+    transition-duration: 0.4s;
+  
+}
+#Linkedin, #Github, #Instagram {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 15px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+    </style>
+  </body>
+</html>
